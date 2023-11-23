@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffc600;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: rgb(158, 224, 202);
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#input-box {
+  width: 80%;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 0px 20px;
+  font-size: larger;
+}
+
+.button {
+  width: 20%;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: rgb(94, 92, 92);
+  border: none;
+  color: white;
+}
+
+#edit-button {
+  display: none;
+}
+
+.todo {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 0px;
+  background-color: rgb(158, 224, 202);
+  overflow: hidden;
+}
+
+ul li {
+  width: 100%;
+  font-size: larger;
+  padding: 15px 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+ul li span {
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+}
+
+ul li span:hover {
+  background: #979797;
+  border-radius: 50%;
+}
+
+ul li i {
+  font-size: 48px;
+  color: #555;
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+}
+
+ul li i:hover {
+  background: #979797;
+  border-radius: 50%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(225, 250, 197);
+  font-size: larger;
+}
+
+.d1 {
+  border-right: 2px solid black;
+  padding-right: 20px;
+  display: flex;
+}
+
+.d2 {
+  padding-left: 10px;
+  width: 210px;
+  flex: 1;
+}
+
+.task {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.checkbox {
+  width: 18px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.checked {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
